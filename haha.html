@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>so</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #123;
+        }
+        .inp {
+            width: 200px;
+            margin:20px auto;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+        }
+        input:focus {
+            outline: none;
+        }
+        h3{
+            margin: 10px 0 0 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Enter your name:</h3>
+    <div class="inp">
+        <input type="text" value="" placeholder="Name..." onclick="playsound()" />
+    </div>
+
+    <audio id="didosong">
+        <source src="hah.mp3" type="audio/mpeg" />
+    </audio>
+</body>
+<script type="text/javascript">
+    function playsound() {
+        var S = document.getElementById("didosong");
+        S.play();
+    }
+</script>
+</html>
